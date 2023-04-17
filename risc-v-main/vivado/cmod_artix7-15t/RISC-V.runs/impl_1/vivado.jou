@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 16 22:06:47 2023
+# Process ID: 24640
+# Current directory: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/RISC-V.runs/impl_1
+# Command line: vivado.exe -log system.vdi -applog -product Vivado -messageDb vivado.pb -mode batch -source system.tcl -notrace
+# Log file: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/RISC-V.runs/impl_1/system.vdi
+# Journal file: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/RISC-V.runs/impl_1\vivado.jou
+#-----------------------------------------------------------
+source system.tcl -notrace

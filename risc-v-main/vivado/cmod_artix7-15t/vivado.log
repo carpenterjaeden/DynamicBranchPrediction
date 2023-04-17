@@ -1,0 +1,36 @@
+#-----------------------------------------------------------
+# Vivado v2020.2 (64-bit)
+# SW Build 3064766 on Wed Nov 18 09:12:45 MST 2020
+# IP Build 3064653 on Wed Nov 18 14:17:31 MST 2020
+# Start of session at: Sun Apr 16 22:04:15 2023
+# Process ID: 32032
+# Current directory: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14316 C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\risc-v-main\vivado\cmod_artix7-15t\RISC-V.xpr
+# Log file: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/vivado.log
+# Journal file: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/RISC-V.xpr
+INFO: [ProjectBase 1-489] The host OS only allows 260 characters in a normal path. The project is stored in a path with more than 80 characters. If you experience issues with IP, Block Designs, or files not being found, please consider moving the project to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter.
+Current project path is 'C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t'
+INFO: [Project 1-313] Project file moved from 'C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/xilinx-risc-v-main/vivado/cmod_artix7-15t' since last save.
+WARNING: [filemgmt 56-2] Default IP Output Path : Could not find the directory 'C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/RISC-V.gen/sources_1', nor could it be found using path 'C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/xilinx-risc-v-main/vivado/cmod_artix7-15t/RISC-V.gen/sources_1'.
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2020.2/data/ip'.
+open_project: Time (s): cpu = 00:00:26 ; elapsed = 00:00:12 . Memory (MB): peak = 1015.371 ; gain = 0.000
+update_compile_order -fileset sources_1
+reset_run impl_1
+launch_runs impl_1 -jobs 4
+[Sun Apr 16 22:06:37 2023] Launched impl_1...
+Run output will be captured here: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/risc-v-main/vivado/cmod_artix7-15t/RISC-V.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a15tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.152 . Memory (MB): peak = 1116.211 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 296 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2020.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
