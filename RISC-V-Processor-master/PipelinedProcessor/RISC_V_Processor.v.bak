@@ -74,7 +74,7 @@ module RISC_V_Processor(
   mux aluSrcMux(.in1(updatedData2), .in2(immDataEX), .out(ReadData3), .sel(ALUSrcEX));
   ALU_64_bit alu(.a(updatedData1), .b(ReadData3), .ALUOp(Operation), .Result(ALUResult), .zero(zero));
 
-  Branch_Predictor BranchPredictor();
+  Branch_Predictor BR_1();
 
   //EXRegister
   MEMRegister memReg(.clk(clk), .reset(reset), .PC_in(BranchPC_In),
