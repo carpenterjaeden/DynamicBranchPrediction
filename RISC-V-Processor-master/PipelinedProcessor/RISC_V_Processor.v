@@ -37,7 +37,7 @@ module RISC_V_Processor(
   Program_Counter pc(.clk(clk), .reset(reset), .PC_In(PC_In), .PC_Out(PC_Out));
   Adder adder(.a(PC_Out), .b(64'd4), .out(NextPC_In));
   Instruction_Memory insMem(.Inst_Address(PC_Out), .Instruction(Instruction));
-  mux newPCMux(.in1(NextPC_In), .in2(pcMEM), .out(PC_In), .sel(prediction));
+  mux newPCMux(.in1(NextPC_In), .in2(pcMEM), .out(PC_In), .sel(shouldBranch));
 
   //IFRegister
   IDRegister idReg(.clk(clk), .reset(reset),

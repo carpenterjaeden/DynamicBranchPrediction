@@ -431,3 +431,171 @@ run
 quit -sim
 # End time: 21:43:36 on Apr 26,2023, Elapsed time: 0:02:01
 # Errors: 0, Warnings: 1
+# Compile of Instruction_Memory.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:45:45 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/Branch
+add wave -position end  sim:/tb/uut/PC_Out
+add wave -position end  sim:/tb/uut/PC_In
+add wave -position end  sim:/tb/uut/prediction
+run
+run
+run
+quit -sim
+# End time: 21:47:26 on Apr 26,2023, Elapsed time: 0:01:41
+# Errors: 0, Warnings: 1
+# Compile of RISC_V_Processor.v was successful.
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:48:49 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v 
+# -- Compiling module RISC_V_Processor
+# 
+# Top level modules:
+# 	RISC_V_Processor
+# End time: 21:48:49 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of Instruction_Memory.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:49:42 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/Branch
+add wave -position end  sim:/tb/uut/BranchEX
+add wave -position end  sim:/tb/uut/PC_Out
+add wave -position end  sim:/tb/uut/prediction
+add wave -position end  sim:/tb/uut/shouldBranch
+run
+run
+run
+quit -sim
+# End time: 21:51:27 on Apr 26,2023, Elapsed time: 0:01:45
+# Errors: 0, Warnings: 1
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:52:32 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/PC_Out
+add wave -position end  sim:/tb/uut/Instruction
+add wave -position end  sim:/tb/uut/Branch
+add wave -position end  sim:/tb/uut/BranchMEM
+add wave -position end  sim:/tb/uut/zeroMEM
+add wave -position end  sim:/tb/uut/BranchPC_In
+add wave -position end  sim:/tb/uut/prediction
+run
+run
+run
+quit -sim
+# Compile of Instruction_Memory.v was successful.
+# End time: 21:56:37 on Apr 26,2023, Elapsed time: 0:04:05
+# Errors: 0, Warnings: 1
+# Load canceled
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:57:00 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/PC_Out
+add wave -position end  sim:/tb/uut/Instruction
+add wave -position end  sim:/tb/uut/prediction
+add wave -position end  sim:/tb/uut/shouldBranch
+add wave -position end  sim:/tb/uut/BranchEX
+add wave -position end  sim:/tb/uut/zeroMEM
+run
+run
+add wave -position 1  sim:/tb/uut/BranchPC_In
+add wave -position 2  sim:/tb/uut/NextPC_In
+add wave -position 3  sim:/tb/uut/PC_In
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+run
+quit -sim
+# End time: 22:01:15 on Apr 26,2023, Elapsed time: 0:04:15
+# Errors: 0, Warnings: 2

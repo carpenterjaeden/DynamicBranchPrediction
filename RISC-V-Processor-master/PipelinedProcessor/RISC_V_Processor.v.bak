@@ -81,9 +81,9 @@ module RISC_V_Processor(
   //Branch Predictor
 
   Branch_Predictor bimodPredictor(
-  .PC_in(PC_Out), // program counter from IF
+  .PC(PC_Out), // program counter from IF
   .outcome(BranchEX), // branch outcome
-  .prediction_out(prediction) // 1-bit prediction
+  .prediction(prediction) // 1-bit prediction
 ); 
 
   //EXRegister
