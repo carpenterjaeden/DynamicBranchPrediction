@@ -11,16 +11,16 @@ module Instruction_Memory(
     insMem[12] = 8'h23;
     insMem[11] = 8'h00;
     insMem[10] = 8'h14;
-    insMem[9] = 8'h84;
-    insMem[8] = 8'h93;
-    insMem[7] = 8'h0;
-    insMem[6] = 8'h9A;
-    insMem[5] = 8'h84;
-    insMem[4] = 8'hB3;
-    insMem[3] = 8'h02;
-    insMem[2] = 8'h85;
-    insMem[1] = 8'h34;
-    insMem[0] = 8'h83;
+    insMem[9] = 8'h84; 
+    insMem[8] = 8'hfe; //bne x1, zero, -8
+    insMem[7] = 8'h00;
+    insMem[6] = 8'h9c;
+    insMem[5] = 8'he3;
+    insMem[4] = 8'hB3; //addi x1, x1, 1
+    insMem[3] = 8'h00;
+    insMem[2] = 8'h10;
+    insMem[1] = 8'h80;
+    insMem[0] = 8'h93;
   end
   always @(Inst_Address)
   begin

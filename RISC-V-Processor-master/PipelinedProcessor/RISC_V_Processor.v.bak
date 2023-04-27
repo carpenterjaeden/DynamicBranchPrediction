@@ -9,7 +9,7 @@ module RISC_V_Processor(
   wire [3:0] Operation;
   wire [2:0] funct3;
   wire [1:0] ALUOp, ForwardA, ForwardB;
-  wire Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, zero;
+  wire Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, zero, prediction;
   wand shouldBranch;
 
   //IF/ID Output wire declarations
@@ -37,7 +37,7 @@ module RISC_V_Processor(
   Program_Counter pc(.clk(clk), .reset(reset), .PC_In(PC_In), .PC_Out(PC_Out));
   Adder adder(.a(PC_Out), .b(64'd4), .out(NextPC_In));
   Instruction_Memory insMem(.Inst_Address(PC_Out), .Instruction(Instruction));
-  mux newPCMux(.in1(NextPC_In), .in2(pcMEM), .out(PC_In), .sel(shouldBranch));
+  mux newPCMux(.in1(NextPC_In), .in2(pcMEM), .out(PC_In), .sel(prediction));
 
   //IFRegister
   IDRegister idReg(.clk(clk), .reset(reset),
@@ -62,6 +62,10 @@ module RISC_V_Processor(
                    .rd_out(rdEX), .Funct_out(functEX),
                    .Branch_out(BranchEX), .MemRead_out(MemReadEX), .MemtoReg_out(MemtoRegEX), .MemWrite_out(MemWriteEX), 
                    .ALUSrc_out(ALUSrcEX), .RegWrite_out(RegWriteEX), .ALUOp_out(ALUOpEX), .PC_out(pcEX));
+
+
+   
+
   //EXRegister
 
   //Instruction Execution Stage
@@ -74,7 +78,13 @@ module RISC_V_Processor(
   mux aluSrcMux(.in1(updatedData2), .in2(immDataEX), .out(ReadData3), .sel(ALUSrcEX));
   ALU_64_bit alu(.a(updatedData1), .b(ReadData3), .ALUOp(Operation), .Result(ALUResult), .zero(zero));
 
-  Branch_Predictor BR_1();
+  //Branch Predictor
+
+  Branch_Predictor bimodPredictor(
+  .PC_in(PC_Out), // program counter from IF
+  .outcome(BranchEX), // branch outcome
+  .prediction_out(prediction) // 1-bit prediction
+); 
 
   //EXRegister
   MEMRegister memReg(.clk(clk), .reset(reset), .PC_in(BranchPC_In),

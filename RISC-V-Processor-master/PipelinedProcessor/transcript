@@ -1,0 +1,433 @@
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:05:56 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v 
+# -- Compiling module RISC_V_Processor
+# 
+# Top level modules:
+# 	RISC_V_Processor
+# End time: 21:05:56 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of RISC_V_Processor.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:06:14 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'PC_in' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: Branch_Predictor.v
+# Error loading design
+# End time: 21:06:14 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:06:43 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v 
+# -- Compiling module RISC_V_Processor
+# 
+# Top level modules:
+# 	RISC_V_Processor
+# End time: 21:06:43 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:06:54 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'PC_i' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: Branch_Predictor.v
+# Error loading design
+# End time: 21:06:54 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:08:02 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v 
+# -- Compiling module RISC_V_Processor
+# 
+# Top level modules:
+# 	RISC_V_Processor
+# End time: 21:08:02 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:08:14 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'PC_in' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: Branch_Predictor.v
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'prediction_out' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: Branch_Predictor.v
+# Error loading design
+# End time: 21:08:14 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:09:53 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(19): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(36): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(38): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(43): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(45): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): (vlog-2110) Illegal reference to net "prediction".
+# End time: 21:09:53 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:11:33 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(19): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(37): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(42): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(54): (vlog-2110) Illegal reference to net "prediction".
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(60): (vlog-2110) Illegal reference to net "prediction".
+# End time: 21:11:33 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 7, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:06 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): near "0": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(37): near "0": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(42): near "1": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): near "0": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(54): near "1": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(60): near "1": syntax error, unexpected INTEGER NUMBER.
+# End time: 21:13:06 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:13:36 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): near "0": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(37): near "0": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(42): near "1": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): near "0": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(54): near "1": syntax error, unexpected INTEGER NUMBER.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(60): near "1": syntax error, unexpected INTEGER NUMBER.
+# End time: 21:13:36 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:14:33 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(37): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(42): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(54): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(60): LHS in procedural continuous assignment may not be a net: prediction.
+# End time: 21:14:33 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:06 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): near "<=": syntax error, unexpected <=.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(37): near "<=": syntax error, unexpected <=.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(42): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): near "<=": syntax error, unexpected <=.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(54): near "<=": syntax error, unexpected <=.
+# ** Error: (vlog-13069) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(60): near "<=": syntax error, unexpected <=.
+# End time: 21:15:06 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:15:24 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(31): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(37): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(42): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(49): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(54): LHS in procedural continuous assignment may not be a net: prediction.
+# ** Error: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(60): LHS in procedural continuous assignment may not be a net: prediction.
+# End time: 21:15:25 on Apr 26,2023, Elapsed time: 0:00:01
+# Errors: 6, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:18:17 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v 
+# -- Compiling module Branch_Predictor
+# 
+# Top level modules:
+# 	Branch_Predictor
+# End time: 21:18:17 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of WBRegister.v was successful.
+# Compile of Adder.v was successful.
+# Compile of ALU_64_bit.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of EXRegister.v was successful.
+# Compile of extractor.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of IDRegister.v was successful.
+# Compile of Instruction_Memory.v was successful.
+# Compile of MEMRegister.v was successful.
+# Compile of mux.v was successful.
+# Compile of mux2.v was successful.
+# Compile of parser.v was successful.
+# Compile of Program_Counter.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of RISC_V_Processor.v was successful.
+# Compile of tb.v was successful.
+# Compile of Branch_Predictor.v was successful.
+# 20 compiles, 0 failed with no errors.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:18:43 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'PC_in' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'prediction_out' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Error loading design
+# End time: 21:18:43 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:21:17 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v 
+# -- Compiling module RISC_V_Processor
+# 
+# Top level modules:
+# 	RISC_V_Processor
+# End time: 21:21:18 on Apr 26,2023, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0
+# Load canceled
+# Compile of RISC_V_Processor.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:21:49 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'PC_in' not found in the connected module (1st connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# ** Error: (vsim-3063) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): Port 'prediction_out' not found in the connected module (3rd connection).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Error loading design
+# End time: 21:21:50 on Apr 26,2023, Elapsed time: 0:00:01
+# Errors: 2, Warnings: 0
+vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:22:30 on Apr 26,2023
+# vlog -reportprogress 300 -work work C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v 
+# -- Compiling module RISC_V_Processor
+# 
+# Top level modules:
+# 	RISC_V_Processor
+# End time: 21:22:30 on Apr 26,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of RISC_V_Processor.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:22:51 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/reset
+add wave -position end  sim:/tb/uut/PC_In
+add wave -position end  sim:/tb/uut/prediction
+add wave -position end  sim:/tb/uut/BranchEX
+run
+run
+run -all
+# Break key hit
+# Break in Module tb at C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/tb.v line 14
+run
+run
+quit -sim
+# End time: 21:26:59 on Apr 26,2023, Elapsed time: 0:04:08
+# Errors: 0, Warnings: 1
+# Compile of Instruction_Memory.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:37:36 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/PC_Out
+add wave -position end  sim:/tb/uut/shouldBranch
+add wave -position end  sim:/tb/uut/prediction
+add wave -position end  sim:/tb/uut/BranchEX
+run
+run
+run
+quit -sim
+# End time: 21:40:34 on Apr 26,2023, Elapsed time: 0:02:58
+# Errors: 0, Warnings: 1
+# Compile of Instruction_Memory.v was successful.
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 21:41:35 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/Branch
+run
+run
+add wave -position end  sim:/tb/uut/PC_Out
+run
+quit -sim
+# End time: 21:43:36 on Apr 26,2023, Elapsed time: 0:02:01
+# Errors: 0, Warnings: 1
