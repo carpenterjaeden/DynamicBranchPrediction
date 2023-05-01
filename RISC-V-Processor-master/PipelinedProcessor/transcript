@@ -599,3 +599,134 @@ run
 quit -sim
 # End time: 22:01:15 on Apr 26,2023, Elapsed time: 0:04:15
 # Errors: 0, Warnings: 2
+vsim -gui work.tb
+# vsim -gui work.tb 
+# Start time: 22:04:00 on Apr 26,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.extractor
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+add wave -position end  sim:/tb/uut/PC_Out
+add wave -position end  sim:/tb/uut/Instruction
+add wave -position end  sim:/tb/uut/BranchMEM
+add wave -position end  sim:/tb/uut/zeroMEM
+add wave -position end  sim:/tb/uut/BranchEX
+add wave -position end  sim:/tb/uut/shouldBranch
+add wave -position end  sim:/tb/uut/prediction
+run
+run
+# Compile of RISC_V_Processor.v was successful.
+restart -f
+# Loading work.RISC_V_Processor
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# Loading work.Instruction_Memory
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# WARNING: No extended dataflow license exists
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# Loading work.Instruction_Memory
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+add wave -position end  sim:/tb/uut/NextPC_In
+add wave -position end  sim:/tb/uut/pcEX
+add wave -position end  sim:/tb/uut/pcMEM
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# Loading work.Instruction_Memory
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# WARNING: No extended dataflow license exists
+# Error: invalid command name "::.main_pane.dataflow.interior.cs.body.pw.df.c"
+add wave -position end  sim:/tb/uut/imm_data
+add wave -position end  sim:/tb/uut/BranchPC_In
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# Loading work.Instruction_Memory
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+add wave -position 11  sim:/tb/uut/immDataEX
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+add wave -position end  sim:/tb/uut/pcMEM
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# Compile of RISC_V_Processor.v was successful.
+restart -f
+# Loading work.RISC_V_Processor
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+# Load canceled
+# Load canceled
+run
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# Loading work.Instruction_Memory
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# Compile of RISC_V_Processor.v was successful.
+restart -f
+# Loading work.RISC_V_Processor
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+run
+# Compile of RISC_V_Processor.v was successful.
+restart -f
+# Loading work.RISC_V_Processor
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+run
+add wave -position end  sim:/tb/uut/bimodPredictor/outcome
+add wave -position end  sim:/tb/uut/bimodPredictor/table1
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [PCDPC] - Port size (32) does not match connection size (64) for port 'PC'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v(9).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/bimodPredictor File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+run
+# Compile of Branch_Predictor.v was successful.
+# Compile of Branch_Predictor.v was successful.
+# Compile of RISC_V_Processor.v was successful.

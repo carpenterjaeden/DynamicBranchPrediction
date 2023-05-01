@@ -2,7 +2,7 @@ module RISC_V_Processor(
   input clk, reset
 );
   //Wire declarations
-  wire [63:0] PC_In, PC_Out, NextPC_In, BranchPC_In, imm_data, ReadData1, ReadData2, writeData, ReadData3, ALUResult, MemRead_Data, updatedData1, updatedData2; 
+  wire [63:0] PC_In, PC_Out, NextPC_In, BranchPC_In, imm_data, ReadData1, ReadData2, writeData, ReadData3, ALUResult, MemRead_Data, updatedData1, updatedData2, PCpredict, IDbranchPC; 
   wire [31:0] Instruction;
   wire [6:0] opcode, funct7;
   wire [4:0] rd, rs1, rs2;
@@ -37,7 +37,7 @@ module RISC_V_Processor(
   Program_Counter pc(.clk(clk), .reset(reset), .PC_In(PC_In), .PC_Out(PC_Out));
   Adder adder(.a(PC_Out), .b(64'd4), .out(NextPC_In));
   Instruction_Memory insMem(.Inst_Address(PC_Out), .Instruction(Instruction));
-  mux newPCMux(.in1(NextPC_In), .in2(pcMEM), .out(PC_In), .sel(shouldBranch));
+  mux newPCMux(.in1(PCpredict), .in2(BranchPC_In), .out(PC_In), .sel(shouldBranch));
 
   //IFRegister
   IDRegister idReg(.clk(clk), .reset(reset),
@@ -50,6 +50,17 @@ module RISC_V_Processor(
   Control_Unit ct(.Opcode(opcode), .Branch(Branch), .MemRead(MemRead), .MemtoReg(MemtoReg), .MemWrite(MemWrite), .ALUSrc(ALUSrc), .RegWrite(RegWrite), .ALUOp(ALUOp));
   extractor e(.ins(insID), .imm_data(imm_data));
   registerFile rf(.rs1(rs1), .rs2(rs2), .rd(rdWB), .clk(clk), .reset(reset), .regWrite(RegWriteWB), .writeData(writeData), .ReadData1(ReadData1), .ReadData2(ReadData2));
+
+
+
+  //branch prediction FUs
+  Adder adder_predict(.a(pcID), .b(imm_data << 1), .out(IDbranchPC));
+  mux mux_predict(
+  .in1(NextPC_In), .in2(IDbranchPC), .sel(Branch),
+  .out(PCpredict)
+);
+
+  
 
   //IDRegister
   EXRegister exReg(.clk(clk), .reset(reset), .PC_in(pcID),
@@ -81,8 +92,8 @@ module RISC_V_Processor(
   //Branch Predictor
 
   Branch_Predictor bimodPredictor(
-  .PC(PC_Out), // program counter from IF
-  .outcome(BranchEX), // branch outcome
+  .branch(BranchEX), // program counter from IF
+  .outcome(shouldBranch), // branch outcome
   .prediction(prediction) // 1-bit prediction
 ); 
 
@@ -99,7 +110,7 @@ module RISC_V_Processor(
 
 
   //Memory Stage
-  assign shouldBranch = BranchMEM;
+  assign shouldBranch = BranchEX;
   assign shouldBranch = zeroMEM;
   Data_Memory uut(.Mem_Addr(aluResultMEM), .Write_Data(updatedData2), .clk(clk), .MemWrite(MemWriteMEM), .MemRead(MemReadMEM), .wordSize(2'b11), .Read_Data(MemRead_Data));
   

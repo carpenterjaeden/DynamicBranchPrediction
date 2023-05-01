@@ -12,13 +12,13 @@ module Instruction_Memory(
     insMem[11] = 8'h00;
     insMem[10] = 8'h14;
     insMem[9] = 8'h84; 
-    insMem[8] = 8'hfe; //beq x0, x0, -4
-    insMem[7] = 8'h00;
-    insMem[6] = 8'h0e;
-    insMem[5] = 8'he3;
-    insMem[4] = 8'hB3; //addi x1, x1, 1
-    insMem[3] = 8'h00;
-    insMem[2] = 8'h10;
+    insMem[8] = 8'hfe; 
+    insMem[7] = 8'h00; //beq x0, x0, -4
+    insMem[6] = 8'h00;
+    insMem[5] = 8'h00;
+    insMem[4] = 8'h63; 
+    insMem[3] = 8'h00; //addi x1, x1, 1
+    insMem[2] = 8'h01;
     insMem[1] = 8'h80;
     insMem[0] = 8'h93;
   end
