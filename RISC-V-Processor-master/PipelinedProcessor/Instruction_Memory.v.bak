@@ -13,10 +13,10 @@ module Instruction_Memory(
     insMem[10] = 8'h14;
     insMem[9] = 8'h84; 
     insMem[8] = 8'hfe; 
-    insMem[7] = 8'h00; //beq x0, x0, -4
+    insMem[7] = 8'hfe; //bne x0, x1, -4
     insMem[6] = 8'h00;
-    insMem[5] = 8'h00;
-    insMem[4] = 8'h63; 
+    insMem[5] = 8'h8e;
+    insMem[4] = 8'he3; 
     insMem[3] = 8'h00; //addi x1, x1, 1
     insMem[2] = 8'h01;
     insMem[1] = 8'h80;

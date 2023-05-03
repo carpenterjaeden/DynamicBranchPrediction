@@ -6,7 +6,7 @@
 
 
 module Branch_Predictor(
-  input [31:0]PC, //program counter
+  input clk, //timing
   input branchex, // branch confirmation from EX register
   input outcome, // branch outcome
   output reg prediction // 2-bit prediction for 2^2 = 4 entries
@@ -23,9 +23,13 @@ end									// index into the table using the least significant bits of the PC
 											// we use bit-wise AND with 2'b11 to extract the two least significant bits
     
 
- always @(PC) begin
+ always @(posedge clk) begin
+
+
 
 if (branchex)begin
+table1[0] = table1[1];
+table1[1] = outcome;
 case (table1[2:1])
 
 2'b00:
@@ -52,10 +56,8 @@ prediction <= 1;
 end
 endcase
 
+table1[2] <= prediction;
 
-
-table1[0] = table1[1];
-table1[2:1] = {prediction, outcome};
 end
 
 
