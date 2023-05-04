@@ -1,0 +1,91 @@
+%---Binary---
+0x00000513
+0x00000593
+0x1f400613 
+0x00100693
+
+0x00000013
+0x00000013
+
+0x00d50533
+
+0x00000013
+0x00000013
+
+0x00d585b3
+
+0x00000013
+0x00000013
+0xfeb516e3
+
+0x00000593
+
+0x00000013
+0x00000013
+0xfcc518e3
+0x00700513
+
+%---ASM---
+ADDI a0, x0, 0
+ADDI a1, x0, 0
+ADDI a2, x0, 3
+ADDI a3, x0, 1
+
+
+loop1:
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+
+ADD a0, a0, a3
+
+loop2:
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+
+ADD a1, a1, a3
+
+
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+BNE a0, a1, loop2
+
+ADDI a1, x0, 0
+
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+BNE a0, a2, loop1
+
+ADDI a0, x0, 7
+
+
+//---Version 2---
+ADDI t0, x0, 0
+ADDI t1, x0, 0
+ADDI t2, x0, 3
+ADDI t3, x0, 1
+
+
+loop1:
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+
+ADD t0, t0, t3
+
+loop2:
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+
+ADD t1, t1, t3
+
+
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+BNE t0, t1, loop2
+
+ADDI t1, x0, 0
+
+ADDI x0, x0, 0
+ADDI x0, x0, 0
+BNE t0, t2, loop1
+
+ADDI a0, x0, 7

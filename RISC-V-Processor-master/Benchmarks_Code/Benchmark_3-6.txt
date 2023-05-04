@@ -1,0 +1,46 @@
+t2 = t3 = false: Benchmark 3
+t2 = t3 = true:  Benchmark 4
+
+t2 = false:	Benchmark 5
+t3 = true:
+
+t2 = true:	Benchmark 6
+t3 = false
+
+//-----------Code
+bool t2 = false; //Conditional ^
+bool t3 = false;
+
+int t0 = 0; //Max Iteration Value
+int t1 = 400
+
+int t4 = 0; //Counters
+int t5 = 0;
+
+while(t0 < t1){
+	
+
+	if(t2 == 1){ //Branch
+		t4++;
+
+		if(t3 == 1){
+			t5++;
+		}
+	}
+
+	if(t3 == 0){ //Branch
+		t5++;
+		t4++;
+		
+		if(t2 == 0){
+			t5++;
+		}
+	}
+
+	if(t4 == t5){ //Branch
+		swap(t2, t3);
+	}
+	
+	t0++;
+	//Branch
+}

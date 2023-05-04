@@ -1,0 +1,76 @@
+0x1f400e13
+
+0x00100293
+0x00100313
+0x00200393
+0x00600533
+
+0x00612023
+0x00410113
+
+0x00000013
+0x00000013
+
+0x006282b3
+0x00500533
+0x00612023
+0x00410113
+
+0x00138393
+0x00000013
+0x00000013
+0x03c38263
+
+0x00530333
+0x00600533
+0x00512023
+0x00410113
+
+0x00138393
+0x00000013
+0x00000013
+0xfbc39ee3
+
+0x00000013
+0x00000013
+
+//---ASM---
+addi t3, x0, 500 %max iterations - must be larger than 2
+
+addi t0, x0, 1
+addi t1, x0, 1
+addi t2, x0, 2
+add a0, x0, t1 	%return final value at t3 iterations
+
+
+SW t1, 0(sp)	%store first value in mem
+addi sp, sp, 4
+
+fib:
+addi x0, x0, 0
+addi x0, x0, 0
+
+add t0, t0, t1
+add a0, x0, t0
+SW t1, 0(sp)	%store even iterative values in mem
+addi sp, sp, 4
+
+addi t2, t2, 1
+addi x0, x0, 0
+addi x0, x0, 0
+beq t2, t3, end	%end sequence if odd iteration max is met
+
+
+add t1, t1, t0
+add a0, x0, t1
+SW t0, 0(sp)	%store odd iterative values in mem
+addi sp, sp, 4
+
+addi t2, t2, 1
+addi x0, x0, 0
+addi x0, x0, 0
+bne t2, t3, fib	%end sequence if even iteration max is met
+
+end:
+addi x0, x0, 0
+addi x0, x0, 0
