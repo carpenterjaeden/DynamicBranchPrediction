@@ -12,11 +12,11 @@ module Branch_Predictor(
   output reg prediction // 2-bit prediction for 2^2 = 4 entries
 );
 
-  reg [2:0] table1; // 4-entry 2-bit counter table
+  reg [1:0] table1; // 2-bit counter register
 
  
 initial begin
-table1 <= 3'b000;
+table1 <= 2'b00;
 prediction <= 0;
 end									
     
@@ -26,41 +26,51 @@ end
 
 
 if (branchex)begin
-table1[0] = table1[1];
-table1[1] = outcome;
-case (table1[2:1])
+case (table1)
 
 2'b00:
 begin
+if (outcome) begin
 prediction <= 0;
-table1[2] <= 0;
+table1[1:0] <= 2'b01;
+end
+else begin 
+prediction <= 0;
+table1[1:0] <= 2'b00;
+end
 end
 2'b01:
 begin
-if (table1[0] == 0) begin
-prediction <= 0;
-table1[2] <= 0;
+if (outcome) begin
+prediction <= 1;
+table1[1:0] <= 2'b10;
 end
 else begin 
-prediction <= 1;
-table1[2] <= 1;
+prediction <= 0;
+table1[1:0] <= 2'b00;
 end
 end
 2'b10:
 begin
-if (table1[0] == 0)begin
-prediction <= 0;
-table1[2] <= 0;
+if (outcome)begin
+prediction <= 1;
+table1[1:0] <= 2'b11;
 end
 else begin
-prediction <= 1;
-table1[2] <= 1;
+prediction <= 0;
+table1[1:0] <= 2'b01;
 end
 end
 2'b11:
 begin
+if (outcome) begin
 prediction <= 1;
-table1[2] <= 1;
+table1[1:0] <= 2'b11;
+end
+else begin 
+prediction <= 1;
+table1[1:0] <= 2'b10;
+end
 end
 endcase
 end

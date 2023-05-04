@@ -5,7 +5,7 @@ z0
 cModel Technology
 dW:\Habib University\Junior\5th Semester\Computer Architecture\Lab Assignments\LabProject\PipelinedProcessor
 vAdder
-Z0 !s110 1683158465
+Z0 !s110 1683171333
 !i10b 1
 !s100 ZYOWDahi[56kPS1bNBegI2
 IBiXemi[KImg8BnIeALE]e0
@@ -19,7 +19,7 @@ Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1683158465.000000
+Z5 !s108 1683171333.000000
 Z6 !s107 Branch_Predictor1bit.v|Branch_Predictornone.v|DataOutput.v|XOR.v|Branch_Predictor.v|ForwardingUnit.v|WBRegister.v|MEMRegister.v|EXRegister.v|IDRegister.v|tb.v|RISC_V_Processor.v|registerFile.v|Program_Counter.v|parser.v|mux2.v|mux.v|InstructionMemory.v|extractor.v|Data_Memory.v|Control_Unit.v|Branch_Control.v|ALU_Control.v|ALU_64_bit.v|Adder.v|
 Z7 !s90 -reportprogress|300|Adder.v|ALU_64_bit.v|ALU_Control.v|Branch_Control.v|Control_Unit.v|Data_Memory.v|extractor.v|InstructionMemory.v|mux.v|mux2.v|parser.v|Program_Counter.v|registerFile.v|RISC_V_Processor.v|tb.v|IDRegister.v|EXRegister.v|MEMRegister.v|WBRegister.v|ForwardingUnit.v|Branch_Predictor.v|XOR.v|DataOutput.v|Branch_Predictornone.v|Branch_Predictor1bit.v|
 !i113 1
@@ -89,24 +89,25 @@ R7
 R8
 n@branch_@control
 vBranch_Predictor
-R0
+!s110 1683172152
 !i10b 1
-!s100 @I2kD]kJZ;7jn89k1aaXg0
-I6AWi_C;@CUCzzi]Z5KNMn1
+!s100 1GoY9IY6mZZG[T7=HdYk<1
+I0`:m0al=1XhdPA]`cG5m62
 R1
 R2
-w1683148669
-8Branch_Predictor.v
-FBranch_Predictor.v
+w1683172141
+8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
 L0 8
 R4
 r1
 !s85 0
 31
-R5
-R6
-R7
+!s108 1683172152.000000
+!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v|
+!s90 -reportprogress|300|-work|work|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v|
 !i113 1
+Z9 o-work work
 R8
 n@branch_@predictor
 vBranch_Predictor1bit
@@ -170,7 +171,7 @@ r1
 !s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v|
 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v|
 !i113 1
-o-work work
+R9
 R8
 n@branch@control
 vControl_Unit
@@ -347,7 +348,7 @@ R0
 IG0E1TS]=_jAd4UYOH?mS@0
 R1
 R2
-Z9 w1681959486
+Z10 w1681959486
 8MEMRegister.v
 FMEMRegister.v
 L0 1
@@ -368,7 +369,7 @@ R0
 I@daL]`BB:`L9BiCCO8zE60
 R1
 R2
-R9
+R10
 8mux.v
 Fmux.v
 L0 1
@@ -388,7 +389,7 @@ R0
 I:HZg7?0^7f=@oUAYGQf3T2
 R1
 R2
-R9
+R10
 8mux2.v
 Fmux2.v
 L0 1
@@ -408,7 +409,7 @@ R0
 InNJoWhe6BKCEmJO6=JQWm3
 R1
 R2
-R9
+R10
 8parser.v
 Fparser.v
 L0 1
@@ -428,7 +429,7 @@ R0
 IQ4RDAP7IIG]:LBL7mNHe12
 R1
 R2
-R9
+R10
 8Program_Counter.v
 FProgram_Counter.v
 L0 1
@@ -466,11 +467,11 @@ nregister@file
 vRISC_V_Processor
 R0
 !i10b 1
-!s100 ZNoni@OOV0?=fX9RHgbGS1
-Icib>Yko2]`<TcFa:GcbWn2
+!s100 S2@;@@TI@5I?oUJ4N_[C52
+IWDWI7bc>`cJYEURTZ7M9]2
 R1
 R2
-w1683158327
+w1683171317
 8RISC_V_Processor.v
 FRISC_V_Processor.v
 L0 1
@@ -511,7 +512,7 @@ R0
 IK:Z569zZX?VCN0KF@HNW?1
 R1
 R2
-R9
+R10
 8WBRegister.v
 FWBRegister.v
 L0 1

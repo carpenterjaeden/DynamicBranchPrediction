@@ -108,7 +108,7 @@ module RISC_V_Processor(
 
   //Branch Predictor
 
-  Branch_Predictornone Predictor(
+  Branch_Predictor Predictor(
   .clk(clk), //Clk used for timing
   .branchex(BranchEX), // branch confirmation from EX
   .outcome(shouldBranch), // branch outcome
