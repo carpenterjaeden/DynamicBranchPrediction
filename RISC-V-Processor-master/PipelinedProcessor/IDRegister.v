@@ -1,10 +1,10 @@
 module IDRegister(
-  input wire [63:0] PC_in, [31:0] ins_in, wire clk, reset,
+  input wire [63:0] PC_in, [31:0] ins_in, wire clk, reset, flush,
   output reg [63:0] PC_out, reg [31:0] ins_out 
 );
   always @(posedge reset or posedge clk)
   begin
-    if(reset)
+    if(reset || flush)
       begin
         ins_out <= 32'b0;
         PC_out <= 64'b0;

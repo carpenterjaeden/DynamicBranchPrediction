@@ -1365,3 +1365,184 @@ restart -f
 #    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
 run
 run
+# Compile of EXRegister.v was successful.
+# Compile of IDRegister.v was successful.
+# 2 compiles, 0 failed with no errors.
+restart -f
+# Loading work.IDRegister
+# Loading work.EXRegister
+# ** Warning: (vsim-3017) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(50): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/idReg File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
+# ** Warning: (vsim-3722) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(50): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+# ** Warning: (vsim-3017) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [TFMPC] - Too few port connections. Expected 35, found 34.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/exReg File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v
+# ** Warning: (vsim-3722) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [TFMPC] - Missing connection for port 'flush'.
+run
+run
+add wave -position end  sim:/tb/uut/BranchFlush
+restart -f
+# ** Warning: (vsim-3017) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(50): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/idReg File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
+# ** Warning: (vsim-3722) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(50): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+# ** Warning: (vsim-3017) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [TFMPC] - Too few port connections. Expected 35, found 34.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/exReg File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v
+# ** Warning: (vsim-3722) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [TFMPC] - Missing connection for port 'flush'.
+run
+run
+add wave -position end  sim:/tb/uut/exReg/flush
+restart -f
+# ** Warning: (vsim-3017) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(50): [TFMPC] - Too few port connections. Expected 7, found 6.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/idReg File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
+# ** Warning: (vsim-3722) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(50): [TFMPC] - Missing connection for port 'flush'.
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+# ** Warning: (vsim-3017) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [TFMPC] - Too few port connections. Expected 35, found 34.
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/exReg File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v
+# ** Warning: (vsim-3722) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(83): [TFMPC] - Missing connection for port 'flush'.
+run
+# Compile of RISC_V_Processor.v was successful.
+restart -f
+# Loading work.RISC_V_Processor
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+run
+# Compile of Instruction_Memory.v was successful.
+# Compile of WBRegister.v was successful.
+# Compile of Adder.v was successful.
+# Compile of ALU_64_bit.v was successful.
+# Compile of ALU_Control.v was successful.
+# Compile of Control_Unit.v was successful.
+# Compile of Data_Memory.v was successful.
+# Compile of EXRegister.v was successful.
+# Compile of extractor.v was successful.
+# Compile of ForwardingUnit.v was successful.
+# Compile of IDRegister.v was successful.
+# Compile of Instruction_Memory.v was successful.
+# Compile of MEMRegister.v was successful.
+# Compile of mux.v was successful.
+# Compile of mux2.v was successful.
+# Compile of parser.v was successful.
+# Compile of Program_Counter.v was successful.
+# Compile of registerFile.v was successful.
+# Compile of RISC_V_Processor.v was successful.
+# Compile of tb.v was successful.
+# Compile of Branch_Predictor.v was successful.
+# Compile of Branch_Control.v was successful.
+# Compile of Branch_Predictor1bit.v was successful.
+# Compile of Branch_Predictornone.v was successful.
+# Compile of XOR.v was successful.
+# 24 compiles, 0 failed with no errors.
+restart -f
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.mux
+# Loading work.Branch_Control
+# Loading work.extractor
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.XOR
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+run
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+run
+add wave -position 26  sim:/tb/uut/bimodPredictor/prediction
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+run
+# Compile of Branch_Predictor.v was successful.
+restart -f
+# Loading work.Branch_Predictor
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+run
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+vsim -gui work.tb
+# End time: 21:44:34 on May 02,2023, Elapsed time: 1:22:06
+# Errors: 2, Warnings: 35
+# vsim -gui work.tb 
+# Start time: 21:44:34 on May 02,2023
+# Loading work.tb
+# Loading work.RISC_V_Processor
+# Loading work.Program_Counter
+# Loading work.Adder
+# Loading work.Instruction_Memory
+# Loading work.mux
+# Loading work.Branch_Control
+# Loading work.extractor
+# Loading work.IDRegister
+# Loading work.parser
+# Loading work.Control_Unit
+# Loading work.registerFile
+# Loading work.EXRegister
+# Loading work.ALU_Control
+# Loading work.mux2
+# Loading work.ForwardingUnit
+# Loading work.ALU_64_bit
+# Loading work.Branch_Predictor
+# Loading work.XOR
+# Loading work.MEMRegister
+# Loading work.Data_Memory
+# Loading work.WBRegister
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+add wave -position end  sim:/tb/uut/insMem/Instruction
+add wave -position end  sim:/tb/uut/Instruction
+run
+# Can't move the Now cursor.
+# Can't move the Now cursor.
+vlog -reportprogress 300 -work work {C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\Instruction_Memory.v}
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 21:45:59 on May 02,2023
+# vlog -reportprogress 300 -work work C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\Instruction_Memory.v 
+# -- Compiling module InstructionMemory
+# 
+# Top level modules:
+# 	InstructionMemory
+# End time: 21:45:59 on May 02,2023, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+# Compile of Instruction_Memory.v was successful.
+restart -f
+# ** Warning: (vsim-3015) C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v(74): [PCDPC] - Port size (64) does not match connection size (32) for port 'b'. The port definition is at: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v(2).
+#    Time: 0 ps  Iteration: 0  Instance: /tb/uut/adder_predict2 File: C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+run
+# End time: 21:48:55 on May 02,2023, Elapsed time: 0:04:21
+# Errors: 2, Warnings: 3

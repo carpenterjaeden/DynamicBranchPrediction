@@ -44,6 +44,16 @@ module Control_Unit(
       Branch <= 1;
       ALUOp <= 2'b01;
     end
+    else if(Opcode == 7'b0010011)
+    begin
+      ALUSrc <= 1;
+      MemtoReg <= 0;
+      RegWrite <=1;
+      MemRead <= 0;
+      MemWrite <= 0;
+      Branch <= 0;
+      ALUOp <= 2'b10;
+    end
     else
     begin
       ALUSrc <= 0;

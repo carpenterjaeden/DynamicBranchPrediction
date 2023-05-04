@@ -23,7 +23,7 @@ end									// index into the table using the least significant bits of the PC
 											// we use bit-wise AND with 2'b11 to extract the two least significant bits
     
 
- always @(clk) begin
+ always @(posedge clk) begin
 
 
 
@@ -35,28 +35,38 @@ case (table1[2:1])
 2'b00:
 begin
 prediction <= 0;
+table1[2] <= 0;
 end
 2'b01:
 begin
-if (table1[0] == 0)
+if (table1[0] == 0) begin
 prediction <= 0;
-else 
+table1[2] <= 0;
+end
+else begin 
 prediction <= 1;
+table1[2] <= 1;
+end
 end
 2'b10:
 begin
-if (table1[0] == 0)
+if (table1[0] == 0)begin
 prediction <= 0;
-else 
+table1[2] <= 0;
+end
+else begin
 prediction <= 1;
+table1[2] <= 1;
+end
 end
 2'b11:
 begin
 prediction <= 1;
+table1[2] <= 1;
 end
 endcase
 
-table1[2] <= prediction;
+
 
 end
 

@@ -3,15 +3,15 @@ module RISC_V_Processor(
 );
   //Wire declarations
   wire [63:0] PC_In, PC_Out, NextPC_In, BranchPC_In, imm_data, imm_data_branch, ReadData1, ReadData2, writeData, ReadData3, ALUResult, MemRead_Data, updatedData1, updatedData2, PCpredict, PCpredict2,
-	      IDbranchPC, beforeBranchPC; 
+	      IDbranchPC, beforeBranchPC, shouldBranchXOR; 
   wire [31:0] Instruction;
   wire [6:0] opcode, funct7;
   wire [4:0] rd, rs1, rs2;
   wire [3:0] Operation;
   wire [2:0] funct3;
   wire [1:0] ALUOp, ForwardA, ForwardB;
-  wire Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, zero, prediction, BranchIF, BranchFlush;
-  wand shouldBranch, shouldPredict, shouldPredict2, doesBranch;
+  wire Branch, MemRead, MemtoReg, MemWrite, ALUSrc, RegWrite, zero, prediction, BranchIF, BranchFlushXOR;
+  wand shouldBranch, shouldPredict, shouldPredict2, doesBranch, BranchFlush;
 
   //IF/ID Output wire declarations
   wire [63:0] pcID;
@@ -47,7 +47,7 @@ module RISC_V_Processor(
   
 
   //IFRegister
-  IDRegister idReg(.clk(clk), .reset(reset),
+  IDRegister idReg(.clk(clk), .reset(reset), .flush(BranchFlush),
                    .PC_in(PC_Out), .ins_in(Instruction),
                    .PC_out(pcID), .ins_out(insID));
   //IDRegister
@@ -71,7 +71,7 @@ module RISC_V_Processor(
   assign shouldPredict2 = BranchEX;
   assign shouldPredict2 = predictionEX;
   assign shouldPredict2 = ~shouldBranch;
-  Adder adder_predict2(.a(pcEX), .b(-4), .out(beforeBranchPC));
+  Adder adder_predict2(.a(pcEX), .b(64'd4), .out(beforeBranchPC));
   mux mux_predict2(
   .in1(PCpredict), .in2(beforeBranchPC), .sel(shouldPredict2),
   .out(PCpredict2)
@@ -80,9 +80,9 @@ module RISC_V_Processor(
   
 
   //IDRegister
-  EXRegister exReg(.clk(clk), .reset(reset), .PC_in(pcID),
+  EXRegister exReg(.clk(clk), .reset(reset), .flush(BranchFlush), .PC_in(pcID),
                    .data1_in(ReadData1), .data2_in(ReadData2), .immData_in(imm_data), .rs1_in(rs1), .rs2_in(rs2),
-                   .rd_in(rd), .Funct_in({Instruction[30],Instruction[14:12]}),
+                   .rd_in(rd), .Funct_in({insID[30],insID[14:12]}),
                    .Branch_in(Branch), .MemRead_in(MemRead), .MemtoReg_in(MemtoReg), .MemWrite_in(MemWrite), 
                    .ALUSrc_in(ALUSrc), .RegWrite_in(RegWrite), .ALUOp_in(ALUOp), .prediction_in(prediction),
                    //Output parameters
@@ -108,13 +108,15 @@ module RISC_V_Processor(
 
   //Branch Predictor
 
-  Branch_Predictor bimodPredictor(
+  Branch_Predictornone Predictor(
   .clk(clk), //Clk used for timing
   .branchex(BranchEX), // branch confirmation from EX
   .outcome(shouldBranch), // branch outcome
   .prediction(prediction) // prediction (true or false)
 ); 
-  XOR Branch_Flush( .a(predictionEX), .b(shouldBranch), .out(BranchFlush));
+  XOR Branch_Flush( .a(predictionEX), .b(shouldBranch), .out(BranchFlushXOR));
+  assign BranchFlush = BranchFlushXOR;
+  assign BranchFlush = BranchEX;
   //EXRegister
   MEMRegister memReg(.clk(clk), .reset(reset), .PC_in(pcEX),
                    .aluResult_in(ALUResult), .data2_in(updatedData2),
@@ -129,7 +131,8 @@ module RISC_V_Processor(
 
   //Memory Stage
   assign shouldBranch = BranchEX;
-  assign shouldBranch = ~zero;
+  XOR XOR_shouldBranch(.a(zero), .b(functEX[0]), .out(shouldBranchXOR));
+  assign shouldBranch = shouldBranchXOR;
   Data_Memory uut(.Mem_Addr(aluResultMEM), .Write_Data(updatedData2), .clk(clk), .MemWrite(MemWriteMEM), .MemRead(MemReadMEM), .wordSize(2'b11), .Read_Data(MemRead_Data));
   
   //MEMRegister
@@ -141,4 +144,8 @@ module RISC_V_Processor(
 
   //WriteBack Stage
   mux memRegMux(.in1(aluResultWB), .in2(MemRead_DataWB), .out(writeData), .sel(MemtoRegWB));
+
+
+//Data output for testing
+  DataOutput datOut(.clk(clk), .rst(reset), .branchex(Branch), .BranchFlush(BranchFlush));
 endmodule 

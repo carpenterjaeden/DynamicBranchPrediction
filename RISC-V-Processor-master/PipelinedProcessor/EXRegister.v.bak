@@ -7,9 +7,9 @@ module EXRegister(
              [4:0] rs2_in, 
              [4:0] rd_in,
              [3:0] Funct_in,
-             wire Branch_in, MemRead_in, MemtoReg_in, MemWrite_in, ALUSrc_in, RegWrite_in, 
+             wire Branch_in, MemRead_in, MemtoReg_in, MemWrite_in, ALUSrc_in, RegWrite_in, prediction_in, 
              [1:0] ALUOp_in, 
-             wire clk, reset,
+             wire clk, reset, flush,
   output reg [63:0] PC_out,
          reg [63:0] data1_out,
          reg [63:0] data2_out,
@@ -19,6 +19,7 @@ module EXRegister(
          reg [4:0] rd_out,
          reg [3:0] Funct_out,
          reg Branch_out, reg MemRead_out, reg MemtoReg_out, reg MemWrite_out, reg ALUSrc_out, reg RegWrite_out,
+	 reg prediction_out,
          reg [1:0] ALUOp_out 
 
 );
@@ -41,6 +42,7 @@ module EXRegister(
         ALUSrc_out <= 1'b0;
         RegWrite_out <= 1'b0;
         ALUOp_out <= 2'b0;
+	prediction_out <= 1'b0;
       end
     else
       begin
@@ -59,6 +61,7 @@ module EXRegister(
         ALUSrc_out <= ALUSrc_in;
         RegWrite_out <= RegWrite_in;
         ALUOp_out <= ALUOp_in;
+	prediction_out <= prediction_in;
       end
   end
 endmodule 

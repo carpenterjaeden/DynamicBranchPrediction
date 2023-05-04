@@ -9,7 +9,7 @@ module EXRegister(
              [3:0] Funct_in,
              wire Branch_in, MemRead_in, MemtoReg_in, MemWrite_in, ALUSrc_in, RegWrite_in, prediction_in, 
              [1:0] ALUOp_in, 
-             wire clk, reset,
+             wire clk, reset, flush,
   output reg [63:0] PC_out,
          reg [63:0] data1_out,
          reg [63:0] data2_out,
@@ -25,7 +25,7 @@ module EXRegister(
 );
   always @(posedge reset or posedge clk)
   begin
-    if(reset)
+    if(reset || flush)
       begin
         PC_out <= 64'b0;
         data1_out <= 64'b0;

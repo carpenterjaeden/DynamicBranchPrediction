@@ -3,7 +3,7 @@ module registerFile(
   output wire [63:0] ReadData1, wire [63:0] ReadData2 
 );
   reg [63:0] registerArr [31:0];
-  always @(posedge reset or posedge clk)
+  always @(*)
   begin
     if(reset)
       begin

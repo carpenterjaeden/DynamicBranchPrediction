@@ -5,158 +5,151 @@ z0
 cModel Technology
 dW:\Habib University\Junior\5th Semester\Computer Architecture\Lab Assignments\LabProject\PipelinedProcessor
 vAdder
-Z0 !s110 1683079696
+Z0 !s110 1683158465
 !i10b 1
 !s100 ZYOWDahi[56kPS1bNBegI2
-I?8>nNM;R2]:]f4hA_KFI?1
+IBiXemi[KImg8BnIeALE]e0
 Z1 VDg1SIo80bB@j0V0VzS_@n1
 Z2 dC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor
 Z3 w1681959485
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v
+8Adder.v
+FAdder.v
 L0 1
 Z4 OV;L;10.5b;63
 r1
 !s85 0
 31
-Z5 !s108 1683079696.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Adder.v|
+Z5 !s108 1683158465.000000
+Z6 !s107 Branch_Predictor1bit.v|Branch_Predictornone.v|DataOutput.v|XOR.v|Branch_Predictor.v|ForwardingUnit.v|WBRegister.v|MEMRegister.v|EXRegister.v|IDRegister.v|tb.v|RISC_V_Processor.v|registerFile.v|Program_Counter.v|parser.v|mux2.v|mux.v|InstructionMemory.v|extractor.v|Data_Memory.v|Control_Unit.v|Branch_Control.v|ALU_Control.v|ALU_64_bit.v|Adder.v|
+Z7 !s90 -reportprogress|300|Adder.v|ALU_64_bit.v|ALU_Control.v|Branch_Control.v|Control_Unit.v|Data_Memory.v|extractor.v|InstructionMemory.v|mux.v|mux2.v|parser.v|Program_Counter.v|registerFile.v|RISC_V_Processor.v|tb.v|IDRegister.v|EXRegister.v|MEMRegister.v|WBRegister.v|ForwardingUnit.v|Branch_Predictor.v|XOR.v|DataOutput.v|Branch_Predictornone.v|Branch_Predictor1bit.v|
 !i113 1
-Z6 o-work work
-Z7 tCvgOpt 0
+Z8 tCvgOpt 0
 n@adder
 vALU_64_bit
 R0
 !i10b 1
-!s100 XQSif1dEalgZcE^;]Gjfl3
-IjATmJkbWE]A0icjPOW1Ci0
+!s100 O^N7h]_1V3HC7EN0:]mXO3
+IT=<zPRHRIBF4V_F_7UN;I2
 R1
 R2
-R3
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_64_bit.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_64_bit.v
+w1683091991
+8ALU_64_bit.v
+FALU_64_bit.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_64_bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_64_bit.v|
-!i113 1
 R6
 R7
+!i113 1
+R8
 n@a@l@u_64_bit
 vALU_Control
 R0
 !i10b 1
 !s100 kG]YcCa:>WSD>c7EWVgB@0
-IC[@jPdcWOmo:f7FV:jX1N3
+IgAMBnO]JUi:IXlhUfl8_j0
 R1
 R2
 R3
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_Control.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_Control.v
+8ALU_Control.v
+FALU_Control.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_Control.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ALU_Control.v|
-!i113 1
 R6
 R7
+!i113 1
+R8
 n@a@l@u_@control
 vBranch_Control
-!s110 1683084653
+R0
 !i10b 1
 !s100 1;]EJnoE34XJW>cDgM3hk2
-I_MO^[OVe?:Z<lGM]P9Ki50
+I<Y;;lc83z^zAkn31[T9eS2
 R1
 R2
 w1683084649
-Z8 8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v
-Z9 FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v
+8Branch_Control.v
+FBranch_Control.v
 L0 1
 R4
 r1
 !s85 0
 31
-!s108 1683084653.000000
-Z10 !s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v|
-Z11 !s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v|
-!i113 1
+R5
 R6
 R7
+!i113 1
+R8
 n@branch_@control
 vBranch_Predictor
-!s110 1683086643
+R0
 !i10b 1
-!s100 4i:gho?@W]Q=UA0f9<?Yo1
-InOc^^MJ[W>SBYRdB;C=SG1
+!s100 @I2kD]kJZ;7jn89k1aaXg0
+I6AWi_C;@CUCzzi]Z5KNMn1
 R1
 R2
-w1683080921
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+w1683148669
+8Branch_Predictor.v
+FBranch_Predictor.v
 L0 8
 R4
 r1
 !s85 0
 31
-!s108 1683086642.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v|
-!i113 1
+R5
 R6
 R7
+!i113 1
+R8
 n@branch_@predictor
 vBranch_Predictor1bit
-Z12 !s110 1683086730
+R0
 !i10b 1
 !s100 O]6C2:eYBg]kjJAXb:MJ=3
-I2EEX@X6^Y1]fO`;E^3V880
+INbhCUCOGEG4]jeY9TN7zB1
 R1
 R2
 w1683086693
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor1bit.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor1bit.v
+8Branch_Predictor1bit.v
+FBranch_Predictor1bit.v
 L0 8
 R4
 r1
 !s85 0
 31
-Z13 !s108 1683086730.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor1bit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor1bit.v|
-!i113 1
+R5
 R6
 R7
+!i113 1
+R8
 n@branch_@predictor1bit
 vBranch_Predictornone
-R12
+R0
 !i10b 1
 !s100 DdCzIz?TUP4Gf=b5P10=e0
-I0kTncFSgCfY_[fh5^fOVk3
+Icon__h29ie^J=@iVRBk271
 R1
 R2
 w1683086724
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictornone.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictornone.v
+8Branch_Predictornone.v
+FBranch_Predictornone.v
 L0 8
 R4
 r1
 !s85 0
 31
-R13
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictornone.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictornone.v|
-!i113 1
+R5
 R6
 R7
+!i113 1
+R8
 n@branch_@predictornone
 vBranchControl
 !s110 1683083953
@@ -166,386 +159,390 @@ IPI`GB6FRKDId20DJkU;[C2
 R1
 R2
 w1683083945
-R8
-R9
+8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v
+FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v
 L0 1
 R4
 r1
 !s85 0
 31
 !s108 1683083952.000000
-R10
-R11
+!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v|
+!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Control.v|
 !i113 1
-R6
-R7
+o-work work
+R8
 n@branch@control
 vControl_Unit
-Z14 !s110 1683079697
-!i10b 1
-!s100 I7VLDOU1dZkB;C=hN_[UJ1
-IEAgkhZ3P>So1^0V9Eikz^2
-R1
-R2
-R3
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Control_Unit.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Control_Unit.v
-L0 1
-R4
-r1
-!s85 0
-31
-Z15 !s108 1683079697.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Control_Unit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Control_Unit.v|
-!i113 1
-R6
-R7
-n@control_@unit
-vData_Memory
-R14
-!i10b 1
-!s100 58H@W>S4f6EdSWbdbE`GD3
-IZ7DDfI90D2E2Bha7zg0C?3
-R1
-R2
-R3
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Data_Memory.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Data_Memory.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Data_Memory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Data_Memory.v|
-!i113 1
-R6
-R7
-n@data_@memory
-vEXRegister
-R14
-!i10b 1
-!s100 f4OJ[jg4_hSca^jmmP8iH0
-IlbXmP@7ZVo;g<5>FOe18^3
-R1
-R2
-w1683078664
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v|
-!i113 1
-R6
-R7
-n@e@x@register
-vextractor
-R14
-!i10b 1
-!s100 jdD99ORh5aDo1C1GKKOd51
-I1Rb0z8?mCa5GSD@2E90;e0
-R1
-R2
-Z16 w1681959486
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/extractor.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/extractor.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/extractor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/extractor.v|
-!i113 1
-R6
-R7
-vForwardingUnit
-R14
-!i10b 1
-!s100 WhcPgh?hXd]h_iRPiOccV1
-IB4XZ6<n9lL]i6VgU2TF5Q0
-R1
-R2
-R3
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ForwardingUnit.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ForwardingUnit.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ForwardingUnit.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ForwardingUnit.v|
-!i113 1
-R6
-R7
-n@forwarding@unit
-vIDRegister
-R14
-!i10b 1
-!s100 Y^3N1Gi?E5d@nm22J;5k80
-IiSGdh`IM6`HXf@U9QT3;?1
-R1
-R2
-R3
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v|
-!i113 1
-R6
-R7
-n@i@d@register
-vInstruction_Memory
-!s110 1683081144
-!i10b 1
-!s100 @^idF[AR@IUULjUCzhhYN1
-I>P74UoP?7a:0c1Pagc@Io3
-R1
-R2
-w1683081138
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Instruction_Memory.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Instruction_Memory.v
-L0 1
-R4
-r1
-!s85 0
-31
-!s108 1683081144.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Instruction_Memory.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Instruction_Memory.v|
-!i113 1
-R6
-R7
-n@instruction_@memory
-vMEMRegister
-R14
-!i10b 1
-!s100 R2Y8>eX3DVGM4=YU:FW;30
-IM9NfEBk3ohS1^:Wj7@dX?1
-R1
-R2
-R16
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/MEMRegister.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/MEMRegister.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/MEMRegister.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/MEMRegister.v|
-!i113 1
-R6
-R7
-n@m@e@m@register
-vmux
-R14
-!i10b 1
-!s100 FbT32=Go2_QYV`_D6^ig=3
-IMY5R1`VB@c8TCJ8d=Y[[f3
-R1
-R2
-R16
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux.v|
-!i113 1
-R6
-R7
-vmux2
-R14
-!i10b 1
-!s100 833UjY[gR0BlLgJcO:V3a0
-IU@D_Xm52I_lH8AYdaOd[G1
-R1
-R2
-R16
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux2.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux2.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux2.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux2.v|
-!i113 1
-R6
-R7
-vparser
-R14
-!i10b 1
-!s100 T>@<[^fCI]B]X:^:LozV90
-ISST?8aK8oigV64Hm:1W@R0
-R1
-R2
-R16
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/parser.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/parser.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/parser.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/parser.v|
-!i113 1
-R6
-R7
-vProgram_Counter
-Z17 !s110 1683079698
-!i10b 1
-!s100 _Db0inc:H2DM]k:FOLGDR0
-IL>]o7fTHX46H7V[D:S9AV1
-R1
-R2
-R16
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Program_Counter.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Program_Counter.v
-L0 1
-R4
-r1
-!s85 0
-31
-R15
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Program_Counter.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Program_Counter.v|
-!i113 1
-R6
-R7
-n@program_@counter
-vregisterFile
-R17
-!i10b 1
-!s100 ?lP5>CO:i]:iUH5Fg_?eN0
-IAAKDP42ghSY=US]59:l^N3
-R1
-R2
-Z18 w1681959487
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/registerFile.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/registerFile.v
-L0 1
-R4
-r1
-!s85 0
-31
-Z19 !s108 1683079698.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/registerFile.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/registerFile.v|
-!i113 1
-R6
-R7
-nregister@file
-vRISC_V_Processor
-!s110 1683086829
-!i10b 1
-!s100 Y;0Y`13ddnT9Q]dKa1::f1
-I3^@0H^_g=96UkeBfZWmb_3
-R1
-R2
-w1683086823
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v
-L0 1
-R4
-r1
-!s85 0
-31
-!s108 1683086829.000000
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/RISC_V_Processor.v|
-!i113 1
-R6
-R7
-n@r@i@s@c_@v_@processor
-vtb
-R17
-!i10b 1
-!s100 1]0DHEejiWOCSJ<4@dd_n2
-IF^=a<`<D`VADmJjWeT]Q83
-R1
-R2
-R18
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/tb.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/tb.v
-L0 1
-R4
-r1
-!s85 0
-31
-R19
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/tb.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/tb.v|
-!i113 1
-R6
-R7
-vWBRegister
 R0
 !i10b 1
-!s100 4bn9b8iiThnZdgeEaCd6D2
-I>lkYO5YYbWZ_m5zV87gc]3
+!s100 2DC63LPi]:]fkDm=:E>YO0
+InnNS>A:G0H7d:N:Cjjh=`2
 R1
 R2
-R16
-8C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/WBRegister.v
-FC:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/WBRegister.v
+w1683094734
+8Control_Unit.v
+FControl_Unit.v
 L0 1
 R4
 r1
 !s85 0
 31
 R5
-!s107 C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/WBRegister.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/WBRegister.v|
-!i113 1
 R6
 R7
-n@w@b@register
-vXOR
-!s110 1683085991
+!i113 1
+R8
+n@control_@unit
+vData_Memory
+R0
 !i10b 1
-!s100 gGYRPUDEo9P3S2TMB]44^1
-IzBAF63h0O=5n3E>IV?Red2
+!s100 58H@W>S4f6EdSWbdbE`GD3
+Ic=fAA_oP?VEi[l98o^d;`0
 R1
 R2
-w1683085986
-8C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\XOR.v
-FC:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\XOR.v
+R3
+8Data_Memory.v
+FData_Memory.v
 L0 1
 R4
 r1
 !s85 0
 31
-!s108 1683085991.000000
-!s107 C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\XOR.v|
-!s90 -reportprogress|300|-work|work|-stats=none|C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\XOR.v|
-!i113 1
+R5
 R6
 R7
+!i113 1
+R8
+n@data_@memory
+vDataOutput
+R0
+!i10b 1
+!s100 K:=C`eAJFoL[`gdfRlZeC2
+I]9?Hne9;UAm8aTCdOVP:G1
+R1
+R2
+w1683105582
+8DataOutput.v
+FDataOutput.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@data@output
+vEXRegister
+R0
+!i10b 1
+!s100 k=n^1Do91hHOL9boH8nF00
+IVLBi[n_FkamJbRCiZ8jb81
+R1
+R2
+w1683087032
+8EXRegister.v
+FEXRegister.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@e@x@register
+vextractor
+R0
+!i10b 1
+!s100 dZ2E;362==DV=CANS8F180
+IOJaFzVOm@LKD@?iFHk6`G0
+R1
+R2
+w1683096092
+8extractor.v
+Fextractor.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vForwardingUnit
+R0
+!i10b 1
+!s100 WhcPgh?hXd]h_iRPiOccV1
+I@_l4_CM2h9f28d`RIY_FW2
+R1
+R2
+R3
+8ForwardingUnit.v
+FForwardingUnit.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@forwarding@unit
+vIDRegister
+R0
+!i10b 1
+!s100 EE@gYhMiMdWJ82XD0k`i=1
+IeO>ABFz2kC0e=L2LHBbS10
+R1
+R2
+w1683087039
+8IDRegister.v
+FIDRegister.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@i@d@register
+vInstruction_Memory
+R0
+!i10b 1
+!s100 WJ1VHNTgi=?fNWme5G7LN1
+IOHX7lBE21cXOm^^K=W4;P1
+R1
+R2
+w1683158201
+8InstructionMemory.v
+FInstructionMemory.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@instruction_@memory
+vMEMRegister
+R0
+!i10b 1
+!s100 R2Y8>eX3DVGM4=YU:FW;30
+IG0E1TS]=_jAd4UYOH?mS@0
+R1
+R2
+Z9 w1681959486
+8MEMRegister.v
+FMEMRegister.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@m@e@m@register
+vmux
+R0
+!i10b 1
+!s100 FbT32=Go2_QYV`_D6^ig=3
+I@daL]`BB:`L9BiCCO8zE60
+R1
+R2
+R9
+8mux.v
+Fmux.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vmux2
+R0
+!i10b 1
+!s100 833UjY[gR0BlLgJcO:V3a0
+I:HZg7?0^7f=@oUAYGQf3T2
+R1
+R2
+R9
+8mux2.v
+Fmux2.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vparser
+R0
+!i10b 1
+!s100 T>@<[^fCI]B]X:^:LozV90
+InNJoWhe6BKCEmJO6=JQWm3
+R1
+R2
+R9
+8parser.v
+Fparser.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vProgram_Counter
+R0
+!i10b 1
+!s100 _Db0inc:H2DM]k:FOLGDR0
+IQ4RDAP7IIG]:LBL7mNHe12
+R1
+R2
+R9
+8Program_Counter.v
+FProgram_Counter.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@program_@counter
+vregisterFile
+R0
+!i10b 1
+!s100 ddBj]3;QJ7o660QdYJ8]I0
+IZH[P=bzeR4FM^m9cA5f6N3
+R1
+R2
+w1683100637
+8registerFile.v
+FregisterFile.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+nregister@file
+vRISC_V_Processor
+R0
+!i10b 1
+!s100 ZNoni@OOV0?=fX9RHgbGS1
+Icib>Yko2]`<TcFa:GcbWn2
+R1
+R2
+w1683158327
+8RISC_V_Processor.v
+FRISC_V_Processor.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@r@i@s@c_@v_@processor
+vtb
+R0
+!i10b 1
+!s100 1]0DHEejiWOCSJ<4@dd_n2
+Io[cZ;gj^^LY[YUWnUPR`T3
+R1
+R2
+w1681959487
+8tb.v
+Ftb.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+vWBRegister
+R0
+!i10b 1
+!s100 4bn9b8iiThnZdgeEaCd6D2
+IK:Z569zZX?VCN0KF@HNW?1
+R1
+R2
+R9
+8WBRegister.v
+FWBRegister.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
+n@w@b@register
+vXOR
+R0
+!i10b 1
+!s100 gGYRPUDEo9P3S2TMB]44^1
+ISghI1h@V6bBKiZ@zWC7io2
+R1
+R2
+w1683154299
+8XOR.v
+FXOR.v
+L0 1
+R4
+r1
+!s85 0
+31
+R5
+R6
+R7
+!i113 1
+R8
 n@x@o@r

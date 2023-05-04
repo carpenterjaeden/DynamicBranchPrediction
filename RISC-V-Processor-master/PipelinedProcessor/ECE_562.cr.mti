@@ -12,7 +12,7 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Control_Unit
 
-} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/XOR.v {1 {vlog -work work -stats=none {C:\Users\jwolf\OneDrive\Documents\GitHub\ECE562_Project\RISC-V-Processor-master\PipelinedProcessor\XOR.v}
+} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/XOR.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/XOR.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module XOR
 
@@ -25,13 +25,6 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	ALU_64_bit
-
-} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Instruction_Memory.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Instruction_Memory.v
-Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Instruction_Memory
-
-Top level modules:
-	Instruction_Memory
 
 } {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -46,6 +39,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 
 Top level modules:
 	Data_Memory
+
+} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/DataOutput.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/DataOutput.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module DataOutput
+
+Top level modules:
+	DataOutput
 
 } {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ForwardingUnit.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/ForwardingUnit.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -82,6 +82,13 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Adder
 
+} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+-- Compiling module Branch_Predictor
+
+Top level modules:
+	Branch_Predictor
+
 } {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictornone.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictornone.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
 -- Compiling module Branch_Predictornone
@@ -96,12 +103,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	Branch_Predictor1bit
 
-} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/Branch_Predictor.v
+} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module Branch_Predictor
+-- Compiling module IDRegister
 
 Top level modules:
-	Branch_Predictor
+	IDRegister
 
 } {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/EXRegister.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
@@ -117,12 +124,12 @@ Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  
 Top level modules:
 	ALU_Control
 
-} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/IDRegister.v
+} {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/InstructionMemory.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/InstructionMemory.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
--- Compiling module IDRegister
+-- Compiling module Instruction_Memory
 
 Top level modules:
-	IDRegister
+	Instruction_Memory
 
 } {} {}} C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux2.v {1 {vlog -work work -stats=none C:/Users/jwolf/OneDrive/Documents/GitHub/ECE562_Project/RISC-V-Processor-master/PipelinedProcessor/mux2.v
 Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016

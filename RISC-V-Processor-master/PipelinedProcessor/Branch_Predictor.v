@@ -18,9 +18,7 @@ module Branch_Predictor(
 initial begin
 table1 <= 3'b000;
 prediction <= 0;
-end									// index into the table using the least significant bits of the PC
-											// take the two least significant bits to index into 2^2 = 4 table entries
-											// we use bit-wise AND with 2'b11 to extract the two least significant bits
+end									
     
 
  always @(posedge clk) begin
@@ -35,31 +33,36 @@ case (table1[2:1])
 2'b00:
 begin
 prediction <= 0;
+table1[2] <= 0;
 end
 2'b01:
 begin
-if (table1[0] == 0)
+if (table1[0] == 0) begin
 prediction <= 0;
-else 
+table1[2] <= 0;
+end
+else begin 
 prediction <= 1;
+table1[2] <= 1;
+end
 end
 2'b10:
 begin
-if (table1[0] == 0)
+if (table1[0] == 0)begin
 prediction <= 0;
-else 
+table1[2] <= 0;
+end
+else begin
 prediction <= 1;
+table1[2] <= 1;
+end
 end
 2'b11:
 begin
 prediction <= 1;
+table1[2] <= 1;
 end
 endcase
-
-table1[2] <= prediction;
-
 end
-
-
   end
 endmodule

@@ -1,0 +1,20 @@
+module Instruction_Memory(Inst_Address, Instruction); 
+
+    input [31:0] Inst_Address;        // Input Address 
+    output reg [31:0] Instruction;    // Instruction at memory location Address
+    integer i;
+    reg [31:0] memory[8191:0];
+
+    initial begin 
+    $readmemh("BenchMark6.mem", memory);
+//    for (i = 0; i < 128; i = i + 1) 
+//        memory[i] = i * 3;
+    end
+
+    always @(Inst_Address) begin
+        Instruction <= memory[Inst_Address[10:2]];
+    end
+    
+
+endmodule
+
