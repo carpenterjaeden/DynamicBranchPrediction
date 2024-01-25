@@ -37,9 +37,6 @@ the branch predictor by modifying the Predictor unit in the ```RISC_V_Processor.
 
 **Note**: Do not check the dependency of a load instruction result on the next instruction, as the architecture does not support stalling.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 ## Acknowledgments
 
