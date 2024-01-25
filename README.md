@@ -45,4 +45,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 * Habib University for the course on Computer-Architecture
 * @hasanbaig for step-by-step well-formatted excercises to build this circuit.
+* @MMujtabaRoohani for a base RISC-V processor to make additions to.
 
