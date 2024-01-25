@@ -32,7 +32,8 @@ project open  "[/path/to/directory]/PipelinedProcessor/ECE_562"
 ```
 
 After the simulation ends, you can see the simulation waves in the simulator. You can also change the benchmark in ```Instruction_Memory.v``` or you can change
-the branch predictor by modifying the Predictor unit in the ```RISC_V_Processor.v``` file. The branch predictor can be changed from a Branch_Predictor module (2 bit branch prediction) to either a Branch_Predictornone module (no branch prediction) or a Branch_Predictor1bit module (1 bit branch prediction). None of the wirings change between the different predictors.
+the branch predictor by modifying the Predictor unit in the ```RISC_V_Processor.v``` file. 
+The branch predictor can be changed from a ```Branch_Predictor``` module (2 bit branch prediction) to a ```Branch_Predictornone``` module (no branch prediction) or a ```Branch_Predictor1bit``` module (1 bit branch prediction). None of the wirings change between the different predictors.
 . 
 
 **Note**: Do not check the dependency of a load instruction result on the next instruction, as the architecture does not support stalling.
